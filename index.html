@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>   
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--адаптивность-->
+   <title>Iryna Veriukhalova | Lebenslauf</title>
+   <link rel="stylesheet" href="style.css"/>
+   <link rel="icon" type="image/x-icon" href="./Img/favicon.ico"> 
+</head>
+
+<body>
+   <!--Верхнее меню-->
+   <div id="root">
+      <header class="header">
+         <nav>
+            <div class="nav-links">  <!--menu - блок слева-->
+               <ul class="main-menu">
+                  <li><a href="#about">Über mich</a></li>
+                  <li><a href="#experience">Berufserfahrung</a></li>
+                  <li><a href="#education">Ausbildung</a></li>
+                  <li><a href="#weiterbildung">Weiterbildung</a></li>
+                  <li><a href="#kontakt">Kontakt</a></li>
+               </ul>
+            </div>
+            <div class="nav-button">  <!--кнопка - блок справа-->
+               <a href="./Img/Lebenslauf.pdf" target="_blank" class="resume-btn">Lebenslauf</a>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Cursor-Beleuchtung-->
+      <div id="cursor-spotlight"></div>
+
+      <main>
+         <!--Name-->
+         <section id="name" class="content-section">
+            <p class="intro">Hallo, mein Name ist</p>
+            <h1 class="name-heading">Iryna Veriukhalova</h1>
+            <div class="summary">
+               <p>Ich habe über 10 Jahre Erfahrung im IT-Bereich als Programmiererin, Anwendungsentwicklerin und Systemadministratorin. </p>
+               <p>Aktuell konzentriere ich mich auf die Webentwicklung und vertiefe meine Kenntnisse in modernen Webtechnologien.</p>
+            </div>
+         </section>
+
+         <!--Über mich-->
+         <section id="about" class="content-section">
+            <h2 class="section-heading">Über mich</h2>
+            <div class="about-grid">
+               <div class="about-text">
+                  <p>Nach meinem Umzug nach Deutschland im Jahr 2022 habe ich zunächst die deutsche Sprache intensiv erlernt und konzentriere mich nun auf den Bereich Webentwicklung.</p>
+                  <p>Für mich ist es besonders interessant, benutzerfreundliche, funktionale und kreative Lösungen umzusetzen. Daher möchte ich meine Kenntnisse in der Webentwicklung weiter ausbauen.</p>
+                  <p>Meine IT-Kenntnisse umfassen unter anderem:</p>
+
+                  <ul class="skills-list">
+                     <li>
+                        HTML5
+                        <div class="bar">
+                           <div class="level" style="width: 60%;"></div>
+                        </div>
+                     </li>
+                     <li>
+                        Delphi
+                        <div class="bar">
+                           <div class="level" style="width: 70%;"></div>
+                        </div>
+                     </li>
+                     <li>
+                        CSS3
+                        <div class="bar">
+                           <div class="level" style="width: 60%;"></div>
+                        </div>
+                     </li>
+                     <li>
+                        SQL
+                        <div class="bar">
+                           <div class="level" style="width: 30%;"></div>
+                        </div>
+                     </li>
+                     <li>
+                        JavaScript
+                        <div class="bar">
+                           <div class="level" style="width: 30%;"></div>
+                        </div>
+                     </li>
+                     <li>
+                        CMS Joomla
+                        <div class="bar">
+                           <div class="level" style="width: 85%;"></div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>               
+            </div>
+         </section>
+
+         <!--Berufserfahrung-->
+         <section id="experience" class="content-section">
+            <h2 class="section-heading">Berufserfahrung</h2>
+            <div class="experience-tabs">
+
+               <div class="tabs-list" role="tablist"> <!--role="tablist"- объявляет, что этот div — контейнер для вкладок / открыт по умолчанию-->
+                  <button id="tab-0" class="it-job" role="tab" aria-selected="true"  aria-controls="panel-0" tabindex="0">Programmiererin</button> 
+                  <!--role="tab" → каждая кнопка внутри — это вкладка / aria-controls - какая панель связана с этой вкладкой / tabindex="0/-1" →  можно ли фокусироваться на кнопке клавиатурой-->
+                  <button id="tab-1" class="it-job" role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1">Systemadministratorin</button>
+                  <button id="tab-2"                role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Buchhalterin</button>
+                  <button id="tab-3"                role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">Spezialistin</button>
+                  <button id="tab-4"                role="tab" aria-selected="false" aria-controls="panel-4" tabindex="-1">Wirtschaftlerin</button>
+                  <div class="highlighter"></div> <!--ползунок рядом с выбранной кнопкой-->
+               </div>
+
+               <div class="tabs-panels"> <!--контейнер для панелей-->
+                  <div id="panel-0" role="tabpanel" aria-labelledby="tab-0" tabindex="0"> 
+                  <!--role="tabpanel" → блок с содержимым, которое относится к конкретной вкладке / aria-labelledby="tab-0" → указывает, какая вкладка управляет этой панелью-->
+                  <!--Если нет атрибута tabindex, то обычные <div> или <section> вообще не могут получить фокус-->
+                     <h3>IT-Unternehmen Danko, Charkiw, Ukraine - <span class="job-title">Programmiererin</span></h3>
+                     <p class="range">2017 - 2022</p>
+                     <ul>
+                        <li>Programmierung in Delphi und SQL-Sprachen für Buchhaltungssoftware (Anwendungsentwicklung)</li>
+                        <li>Datenbankarbeit und Entwicklung von Formen für den Datenversand</li>
+                        <li>Betreuung der Website auf CMS Joomla</li>
+                        <li>Installieren und Konfigurieren von virtuellen Hyper-V-Maschinen</li>
+                        <li>Beratung, Kundenbetreuung, Wartung und Service</li>
+                     </ul>
+                  </div>
+                  <div id="panel-1" role="tabpanel" aria-labelledby="tab-1" tabindex="0" class="hidden"> 
+                  <!--aria-labelledby- привязка к кнопке / добавлен class hidden для скрытия-->
+                     <h3>Wissenschaftliche medizinische Bibliothek, Charkiw - <span class="job-title">Systemadministratorin</span></h3>
+                     <p class="range">2012 - 2017</p>
+                     <ul>
+                        <li>Verwaltung und technischer Support für Computerausrüstung, lokales Netzwerk und Software: Installation, Aktualisierung, Konfiguration und Reparatur</li>
+                        <li>Entwicklung und Betreuung
+                           <a href="./Img/screenshot_HNMB.jpg" target="_blank" class="image-tooltip-trigger">
+                              der Website
+                              <div class="tooltip-container"> <!--всплывающая подсказка-->
+                                 <img src="./Img/screenshot_HNMB.jpg" alt="Screenshot der Website" class="tooltip-image-preview">
+                                    <div class="tooltip-note">
+                                       Verfügbar unter <br>http://medlibrary.kharkov.ua<br>
+                                       (nur HTTP, kein SSL, nicht mehr gepflegt seit 2022)
+                                    </div>
+                              </div>
+                           </a>
+                           der Organisation (Webdesign-Programm Artisteer, CMS Joomla, Grundkenntnisse  HTML, CSS, phpMyAdmin): Design, Struktur, Content-Management, Domain- und Hosting-Administration
+                        </li>
+                     </ul>
+                  </div>
+                  <div id="panel-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0" class="hidden">
+                     <h3>Wissenschaftliche medizinische Bibliothek, Charkiw - <span class="job-title">Buchhalterin</span></h3>
+                     <p class="range">2011 - 2012</p>
+                     <ul>
+                        <li>Entgegennahme, Verarbeitung und Kontrolle von Primärdokumenten</li>
+                        <li>Interaktion mit dem Staatsschatz und Führung von Aufzeichnungen</li>
+                     </u>
+                  </div>
+                  <div id="panel-3" role="tabpanel" aria-labelledby="tab-3" tabindex="0" class="hidden">
+                     <h3>Abteilung für sozialen Schutz der Bevölkerung in Sozialversicherungsamt, Charkiw, Ukraine - <span class="job-title">Spezialistin</span></h3>
+                     <p class="range">2010 - 2011</p>
+                     <ul>
+                        <li>Berechnung und Pflege der PC-Datenbank für Sozialleistungen, Wohngeld, Zulagen und Entschädigungen</li>
+                        <li>Beratung und Kundenbetreuung</li>
+                     </ul>
+                  </div>
+                  <div id="panel-4" role="tabpanel" aria-labelledby="tab-4" tabindex="0" class="hidden">
+                     <h3>Bank "Finanzen und Kredit", Charkiw - <span class="job-title">Wirtschaftlerin</span></h3>
+                     <p class="range">2007 - 2009</p>
+                     <ul>
+                        <li>Betreuung juristischer und privater Personen</li>
+                        <li>Kundenservice für Einlagen und Kredite</li>
+                        <li>Eröffnung von Abrechnungs- und Girokonten & Transaktionen mit Bankkarten</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--Ausbildung-->
+         <section id="education" class="content-section">
+            <h2 class="section-heading">Ausbildung</h2>
+            <div class="timeline">
+               <div class="timeline-item">
+                  <h3>Studium der Informationssysteme im Management</h3>
+                  <p>Spezialistin - zwischen Bachelor und Master</p>
+                  <p>(Zeugnisbewertung in Deutschland 03.2025)</p>
+                  <p class="university-name">Staatliche Universität für Wirtschaftswissenschaften, Charkiw | 1994 - 1999</p>
+                  <p class="degree-specialization">Abschluss: Managerin-Wirtschaftswissenschaftlerin</p>
+               </div>
+               <div class="timeline-item">
+                  <h3>Studium der Betriebswirtschaft</h3>
+                  <p>Bachelor</p>
+                  <p class="university-name">Staatliche Universität für Wirtschaftswissenschaften, Charkiw | 1994 - 1998</p>
+                  <p class="degree-specialization">Abschluss: Management</p>
+               </div>
+               <div class="timeline-item">
+                  <h3>Studium der Programmierung für Computer und automatisierte Systeme</h3>
+                  <p>Juniorspezialistin</p>
+                  <p class="university-name">Kolleg für Patente und Computertechnologien, Charkiw | 1990 - 1994</p>
+                  <p class="degree-specialization">Abschluss: Programmiererin</p>
+               </div>
+            </div>
+         </section>
+
+         <!--Weiterbildung-->
+         <section id="weiterbildung" class="content-section">
+            <h2 class="section-heading">Weiterbildung</h2>
+            <div class="course-cards-container">
+               <!-- карточки с курсами -->
+               <div class="course-card">
+                  <div class="card-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="bi bi-code-slash" role="img" aria-label="Code Icon">
+                     <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
+                  </div>
+                  <h3 class="card-title">Grundlagen der Programmierung in HTML, CSS und JavaScript</h3>
+                  <p class="card-text">Online-Plattform "Prometheus", Ukraine, 2025</p>
+                  <div class="certificate-preview">
+                     <img src="./Img/Zertifikat HTML_CSS_JavaScript_de.png" alt="Zertifikat 1">
+                  </div>
+               </div>
+
+               <div class="course-card">
+                     <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="bi bi-hash" role="img" aria-label="Hashtag Icon">
+                        <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.26c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.434l-.526 2.554H7.342l.515-2.523c.062-.305.015-.477-.188-.477-.265 0-.492.172-.554.477l-.555 2.703H4.846c-.421 0-.617.234-.617.547 0 .312.188.53.617.53h.985l-.516 2.524H4.21c-.43 0-.618.227-.618.547 0 .313.188.524.618.524h1.046l-.476 2.304c-.063.305-.016.477.188.477.266 0 .492-.172.555-.477l.526-2.554h2.185l-.515 2.523c-.062.305-.015.477.188.477zM7.483 8.25h2.184l-.515 2.523H6.969l.515-2.523z"/></svg>
+                     </div>
+                     <h3 class="card-title">Grundlagen der Web-UI-Entwicklung (15 Stunden)</h3>
+                     <p class="card-text">Online-Plattform "Prometheus", Ukraine, 2025</p>
+                     <div class="certificate-preview">
+                        <img src="./Img/Zertifikat WebUI_de.png" alt="Zertifikat 2">
+                     </div>
+               </div>
+
+               <div class="course-card">
+                     <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="bi bi-braces" role="img" aria-label="Code Icon">
+                        <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.9c-1.114 0-1.49-.362-1.49-1.456V4.92c0-1.593-.759-2.352-2.372-2.352h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/></svg>
+                     </div>
+                     <h3 class="card-title">Grundlagen der Webentwicklung (HTML, CSS, JavaScript) (30 Stunden)</h3>
+                     <p class="card-text">Online-Plattform "Edera", Ukraine, 2025</p>
+                     <div class="certificate-preview">
+                        <img src="./Img/Zertifikat_EdRa_de.png" alt="Zertifikat 3">
+                     </div>
+               </div>
+
+            </div>
+         </section>
+         <!-- Popup Overlay для сертификата -->
+         <div id="certificate-overlay" class="certificate-overlay">
+            <img src="" alt="Zertifikat" id="certificate-image">
+         </div>
+
+         <!--Kontakt-->
+         <section id="kontakt" class="content-section">
+            <h2 class="section-heading">Kontakt</h2>
+            <div class="contact-menu-section">
+               <div class="contact-submenu" id="contact-menu">
+                  <button class="active" data-target="c1">Telefon</button>
+                  <button data-target="c2">E-Mail</button>
+                  <button data-target="c3">Adresse</button>
+               </div>
+               <div class="contact-details" id="contact-details">
+                  <div id="c1" class="contact-content active">
+                     <h3><a href="tel:+4915128146156">+49 151 281 461 56</a></h3>
+                  </div>
+                  <div id="c2" class="contact-content">
+                     <h3><a href="mailto:irini3575@gmail.com">irini3575@gmail.com</a></h3>
+                  </div>
+                  <div id="c3" class="contact-content">
+                     <h3>Am Herrenberge 7, 07745 Jena, Deutschland</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="social-links">
+               <a href="https://www.linkedin.com/in/iryna-veriukhalova-00791436b/" target="_blank" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                  <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                     <path d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(100,255,218); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                     <path d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(100,255,218); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                  </g>
+                  </svg>
+               </a>
+               <a href="https://www.xing.com/profile/Iryna_Veriukhalova086915/web_profiles" target="_blank" aria-label="Xing">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                  <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                     <path d="M 13.678 17.776 c -0.781 0 -1.439 0.274 -1.77 0.811 c -0.342 0.554 -0.29 1.268 0.075 1.991 l 8.776 15.192 c 0.015 0.029 0.015 0.047 0 0.074 L 6.967 60.182 c -0.36 0.716 -0.342 1.436 0 1.991 c 0.331 0.534 0.915 0.885 1.697 0.885 h 12.98 c 1.94 0 2.877 -1.31 3.54 -2.507 c 0 0 13.488 -23.854 14.013 -24.781 c -0.053 -0.086 -8.923 -15.561 -8.923 -15.561 c -0.648 -1.151 -1.623 -2.435 -3.613 -2.435 L 13.678 17.776 L 13.678 17.776 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(100,255,218); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                     <path d="M 68.209 0.001 c -1.939 0 -2.779 1.221 -3.475 2.472 c 0 0 -27.963 49.59 -28.885 51.218 c 0.047 0.088 18.443 33.836 18.443 33.836 C 54.936 88.679 55.93 90 57.919 90 h 12.965 c 0.782 0 1.393 -0.294 1.723 -0.829 c 0.347 -0.554 0.337 -1.286 -0.027 -2.006 L 54.28 53.732 c -0.018 -0.026 -0.018 -0.059 0 -0.085 L 83.019 2.833 c 0.361 -0.717 0.369 -1.449 0.027 -2.003 C 82.715 0.295 82.102 0 81.32 0 H 68.207 v 0.001 L 68.209 0.001 L 68.209 0.001 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(100,255,218); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                  </g>
+                  </svg>
+               </a>
+            </div>
+         </section>
+
+      </main>
+
+      <!--Footer-->
+      <div class="footer-container">
+         <footer>
+            <p>© 2025 Iryna Veriukhalova</p>
+         </footer>
+      </div>
+   </div>
+
+   <!--стрелка вверх-->
+   <svg class="arrow first" viewBox="0 0 28 18">
+      <path d="M26 16 L14 3 L2 16"></path>
+   </svg>
+   <svg class="arrow second" viewBox="0 0 28 18">
+      <path d="M26 16 L14 3 L2 16"></path>
+   </svg>
+
+   <script src="script.js"></script>
+</body>
+</html>
